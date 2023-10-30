@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pms-api"
+version = "0.1.0"
+description = "Personal Manager System API"
+authors = ["Sauli Rodriguez <sauli6692@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Django = "^4.2.6"
+djangorestframework = "^3.14.0"
+markdown = "^3.5"
+django-filter = "^23.3"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.2"
+
+[tool.ruff]
+# Set the maximum line length to 79.
+line-length = 89
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
